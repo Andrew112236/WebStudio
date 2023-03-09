@@ -64,10 +64,27 @@
                 class="form-section-comments"
                 name="feedback"
                 rows="5"
-                placeholder="Type your message here..."
+                placeholder="Enter the text"
               ></textarea>
             </label>
-            <button type="submit">Send</button>
+            <label class="form-section-container"
+              ><div class="agreement">
+                <div class="form-svg-check">
+                  <svg width="15" height="12">
+                    <use
+                      href="images/symbol-defs-optimized.svg#icon-checked-agreement"
+                    ></use>
+                  </svg>
+                </div>
+                <p class="agreement-text">
+                  I agree with the letter and accept the
+                  <span style="color: var(--color-logo-left-path)"
+                    >Terms and Conditions</span
+                  >
+                </p>
+              </div></label
+            >
+            <button class="form-button-send" type="submit">Send</button>
           </form>
         </div>
       </div>
