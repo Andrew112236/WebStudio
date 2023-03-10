@@ -83,6 +83,8 @@
 .right-links:focus,
 .contact-list li:hover {
   fill: var(--color-logo-left-path);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .contact-list li a svg {
@@ -247,12 +249,16 @@
 .close-button:hover {
   fill: var(--color-logo-left-path);
   cursor: pointer;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .form-styling:hover,
 .form-section-comments:hover {
   border: 1px solid var(--color-logo-left-path);
   cursor: pointer;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .form-description {
@@ -333,6 +339,8 @@
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .form-description input[type="checkbox"]:checked + .form-svg-check {
@@ -803,11 +811,6 @@ footer {
 .footer-email:hover {
   border: 1px solid var(--color-logo-left-path);
   cursor: pointer;
-}
-
-.form-svg-confirmation {
-  display: flex;
-  background-color: red;
 }
 
 /* PAGE PORTFOLIO */
