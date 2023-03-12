@@ -31,33 +31,39 @@
             Leave your information and we'll call you back
           </p>
           <form name="signup_form" class="form-description" autocomplete="on">
-            <label class="form-section-container">
-              Name
-              <svg class="form-svg" width="12" height="12">
-                <use
-                  href="images/symbol-defs-optimized.svg#icon-person-black"
-                ></use>
-              </svg>
-              <input class="form-styling" type="text" name="Name" />
-            </label>
-            <label class="form-section-container">
-              Telephone
-              <svg class="form-svg" width="13" height="13">
-                <use
-                  href="images/symbol-defs-optimized.svg#icon-telephone-form"
-                ></use>
-              </svg>
-              <input class="form-styling" type="tel" name="Telephone" />
-            </label>
-            <label class="form-section-container">
-              Email
-              <svg class="form-svg" width="15" height="12">
-                <use
-                  href="images/symbol-defs-optimized.svg#icon-mail-form"
-                ></use>
-              </svg>
-              <input class="form-styling" type="email" name="Email" />
-            </label>
+            <div class="name-form-container">
+              <label class="form-section-container">
+                Name
+                <input class="form-styling" type="text" name="Name" />
+                <svg class="form-svg" width="12" height="12">
+                  <use
+                    href="images/symbol-defs-optimized.svg#icon-person-black"
+                  ></use>
+                </svg>
+              </label>
+            </div>
+            <div class="tel-form-container">
+              <label class="form-section-container">
+                Telephone
+                <input class="form-styling" type="tel" name="Telephone" />
+                <svg class="form-svg" width="13" height="13">
+                  <use
+                    href="images/symbol-defs-optimized.svg#icon-telephone-form"
+                  ></use>
+                </svg>
+              </label>
+            </div>
+            <div class="email-form-container">
+              <label class="form-section-container">
+                Email
+                <svg class="form-svg" width="15" height="12">
+                  <use
+                    href="images/symbol-defs-optimized.svg#icon-mail-form"
+                  ></use>
+                </svg>
+                <input class="form-styling" type="email" name="Email" />
+              </label>
+            </div>
             <label class="form-section-container">
               Comments
               <textarea
@@ -588,12 +594,8 @@
             </label>
             <label class="form-section-container-footer">
               <button class="footer-subscribe-button" type="submit">
-                Subscribe<svg
-                  class="form-svg-confirmation"
-                  width="24"
-                  height="24"
-                >
-                  <use href="images/symbol-defs-optimized.svg#linkedin2"></use>
+                Subscribe<svg class="subscribe-icon" width="24" height="24">
+                  <use href="images/symbol-defs-optimized.svg#icon-send"></use>
                 </svg>
               </button>
             </label>

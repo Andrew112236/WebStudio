@@ -239,23 +239,25 @@
   flex-grow: 1;
 }
 
+.name-form-container,
+.tel-form-container,
+.email-form-container {
+  position: relative;
+}
+
+.name-form-cotainer:hover {
+  fill: var(--color-logo-left-path);
+  border: var(--color-logo-left-path);
+}
+
 .form-svg {
   position: absolute;
   top: 55%;
   left: 14px;
 }
 
-.form-svg:hover,
 .close-button:hover {
   fill: var(--color-logo-left-path);
-  cursor: pointer;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
-.form-styling:hover,
-.form-section-comments:hover {
-  border: 1px solid var(--color-logo-left-path);
   cursor: pointer;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -310,6 +312,7 @@
   position: absolute;
   left: 18px;
   top: 8px;
+  fill: white;
 }
 
 .agreement-text {
@@ -782,10 +785,6 @@ footer {
   gap: 12px;
 }
 
-.footer-section-container-footer {
-  position: relative;
-}
-
 .footer-email {
   width: 358px;
   height: 50px;
@@ -804,13 +803,22 @@ footer {
   color: var(--color-section-header);
   font-weight: 700;
   font-size: 16px;
-  line-height: 0.53;
   cursor: pointer;
+  text-align: left;
+  padding-left: 43px;
+  line-height: 0.53;
+  position: relative;
 }
 
 .footer-email:hover {
   border: 1px solid var(--color-logo-left-path);
   cursor: pointer;
+}
+
+.subscribe-icon {
+  position: absolute;
+  right: 28px;
+  bottom: 12px;
 }
 
 /* PAGE PORTFOLIO */
